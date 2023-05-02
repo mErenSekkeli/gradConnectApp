@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GradConnect" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/turquoise</item>
+        <item name="colorSecondary">@color/light_purple</item>
+    </style>
+
+    <style name="Theme.GradConnect" parent="Base.Theme.GradConnect" />
+</resources>
