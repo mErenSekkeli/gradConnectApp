@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GradConnect</string>
+    <string name="sign_in">Giriş Yap</string>
+    <string name="sign_up">Kayıt Ol</string>
+    <string name="havent_account">Hesabın yok mu?</string>
+    <string name="close">Kapat</string>
+    <string name="got_it">Anladım</string>
+    <string name="what_is_this_app">Bu uygulama da Nedir?</string>
+    <string name="what_is_this_app_desc">Mezunlar topluluğumuza katılmaya karar verdiğiniz için çok mutluyuz. Uygulamamız, bu heyecan verici yeni yolculuğa çıkarken diğer mezunlarla bağlantıda kalmanıza ve deneyimlerinizi paylaşmanıza yardımcı olmak için tasarlanmıştır.
+
+Uygulamamız ile diğer mezunlarla iletişim kurabilir, görsel ve duyuruları paylaşabilir, mezuniyetinizle ilgili tüm haber ve etkinliklerden haberdar olabilirsiniz. İster eski arkadaşlarınızla yeniden bağlantı kurmak ister yeni bağlantılar kurmak isteyin, uygulamamız bağlantıda kalmak ve bilgilenmek için ihtiyacınız olan her şeye sahiptir.
+
+Öyleyse devam edin ve uygulamamızı keşfedin! Umarız faydalı ve keyifli bulursunuz. Ve mezuniyetiniz için tebrikler!</string>
+    <string name="name">İsim*</string>
+    <string name="surname">Soyisim*</string>
+    <string name="email">E-posta*</string>
+    <string name="password">Şifre*</string>
+    <string name="password_again">Şifre Tekrar*</string>
+    <string name="school_entry_date">Okula Giriş Tarihi</string>
+    <string name="school_graduation_date">Okul Mezuniyet Tarihi</string>
+    <string name="tell_us_about_yourself">Biraz Kendinden Bahset</string>
+    <string name="select_profile">Profil Resmi Seç</string>
+    <string name="name_or_surname_empty">Adınızı ve soyadınızı girdiğinizden emin olun</string>
+    <string name="email_empty">E-posta adresinizi girdiğinizden emin olun</string>
+    <string name="email_format_error">E-posta formatı yanlış</string>
+    <string name="password_empty">Şifrenizi girdiğinizden emin olun</string>
+    <string name="passwords_not_match">Şifreler eşleşmiyor</string>
+    <string name="password_format_error">Şifreniz en az 8 haneli ve büyük küçük harf içermelidir.</string>
+    <string name="registration_successful">Kayıt Başarılı</string>
+    <string name="email_or_password_empty">E-posta ve şifrenizi girdiğinizden emin olun</string>
+    <string name="login_success">Giriş Başarılı</string>
+    <string name="login_failed">E-Posta ya da Şifre Hatalı</string>
+    <string name="remind_me">Beni Hatırla</string>
+</resources>

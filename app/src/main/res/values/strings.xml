@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">GradConnect</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="havent_account">Don\'t have an account?</string>
+    <string name="close">Close</string>
+    <string name="got_it">Got it</string>
+    <string name="what_is_this_app">What is this app?</string>
+    <string name="what_is_this_app_desc">We\'re so glad you\'ve decided to join our community of graduates. Our app is designed to help you stay connected with other graduates and share your experiences as you embark on this exciting new journey.
+
+With our app, you can communicate with other graduates, share images and announcements, and stay up-to-date with all the latest news and events related to your graduation. Whether you\'re looking to reconnect with old friends or make new connections, our app has everything you need to stay connected and informed.
+
+So go ahead and explore our app! We hope you find it useful and enjoyable. And congratulations on your graduation!</string>
+    <string name="name">Name*</string>
+    <string name="surname">Surname*</string>
+    <string name="email">Email*</string>
+    <string name="password">Password*</string>
+    <string name="password_again">Password Again*</string>
+    <string name="school_entry_date">School Entry Date</string>
+    <string name="school_graduation_date">School Graduation Date</string>
+    <string name="tell_us_about_yourself">Tell us about yourself</string>
+    <string name="select_profile">Select Profile Image</string>
+    <string name="name_or_surname_empty">Make sure you enter your name and surname</string>
+    <string name="email_empty">Make sure you enter your email</string>
+    <string name="email_format_error">E-Mail format is wrong</string>
+    <string name="password_empty">Make sure you enter your password</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="password_format_error">Your password must contain at least 8 digits and uppercase and lowercase characters.</string>
+    <string name="registration_successful">Registration Successful</string>
+    <string name="email_or_password_empty">Make sure you enter your email and password</string>
+    <string name="login_success">Login Successful</string>
+    <string name="login_failed">E-Mail or Password Incorrect</string>
+    <string name="remind_me">Remind Me</string>
+
 </resources>

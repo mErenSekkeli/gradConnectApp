@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getSheet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/light_purple"
+        android:onClick="getSheet"
+        android:text="@string/what_is_this_app"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="474dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getSheet">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/name" />
+
+            <EditText
+                android:id="@+id/surnameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/surname" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/school_entry_date"></TextView>
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:datePickerMode="spinner"
+                android:id="@+id/entryDate"
+                android:calendarViewShown="false"></DatePicker>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/school_graduation_date"></TextView>
+
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:datePickerMode="spinner"
+                android:id="@+id/graduationDate"
+                android:calendarViewShown="false"></DatePicker>
+
+
+            <EditText
+                android:id="@+id/mailInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email" />
+
+            <EditText
+                android:id="@+id/passInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/password" />
+
+            <EditText
+                android:id="@+id/passInput2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/password_again" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/select_profile"></TextView>
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="15dp"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:onClick="selectImageFromGallery"
+                android:scaleType="fitCenter"
+                android:src="@drawable/select_profile" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/light_purple"
+                android:onClick="signUp"
+                android:text="@string/sign_up"
+                android:textSize="16dp" />
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18dp"
+        android:text="@string/tell_us_about_yourself"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getSheet" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/turquoise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
