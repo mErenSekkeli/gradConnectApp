@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="graduate_types">
+        <item value="0">Undergraduate</item>
+        <item value="1">Graduate</item>
+        <item value="2">PhD</item>
+    </array>
+</resources>
