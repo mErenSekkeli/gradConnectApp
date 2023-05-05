@@ -167,15 +167,6 @@ class SignUpActivity : AppCompatActivity() {
         binding.root.removeViewAt(binding.root.childCount - 1)
     }
 
-    private fun changeToTimestamp(date: DatePicker): Timestamp {
-        val selectedYear = date.year
-        val selectedMonth = date.month
-        val selectedDay = date.dayOfMonth
-        val calendar = Calendar.getInstance()
-        calendar.set(selectedYear, selectedMonth, selectedDay)
-        return Timestamp(calendar.timeInMillis)
-    }
-
     fun signUp(view: View): Boolean{
         hideKeyboard()
         if(userInfoChecker())
@@ -208,8 +199,8 @@ class SignUpActivity : AppCompatActivity() {
                         postMap["surname"] = binding.surnameInput.text.toString()
                         postMap["email"] = auth.currentUser!!.email!!
                         postMap["profileImage"] = downloadUrl
-                        postMap["entryDate"] = changeToTimestamp(binding.entryDate)
-                        postMap["graduationDate"] = changeToTimestamp(binding.graduationDate)
+                        postMap["entryDate"] = binding.entryDate.text.toString()
+                        postMap["graduationDate"] = binding.graduationDate.text.toString()
 
                         firestore.collection("UserData").add(postMap).addOnSuccessListener {
                             Toast.makeText(this, R.string.registration_successful, Toast.LENGTH_SHORT).show()
@@ -231,8 +222,8 @@ class SignUpActivity : AppCompatActivity() {
                 postMap["name"] = binding.nameInput.text.toString()
                 postMap["surname"] = binding.surnameInput.text.toString()
                 postMap["email"] = auth.currentUser!!.email!!
-                postMap["entryDate"] = changeToTimestamp(binding.entryDate)
-                postMap["graduationDate"] = changeToTimestamp(binding.graduationDate)
+                postMap["entryDate"] = binding.entryDate.text.toString()
+                postMap["graduationDate"] = binding.graduationDate.text.toString()
 
                 firestore.collection("UserData").add(postMap).addOnSuccessListener {
                     Toast.makeText(this, R.string.registration_successful, Toast.LENGTH_SHORT).show()

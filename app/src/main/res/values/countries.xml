@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_names">
+        <item>@string/turkey</item>
+        <item>@string/united_states</item>
+        <item>@string/albania</item>
+        <item>@string/andorra</item>
+        <item>@string/austria</item>
+        <item>@string/belarus</item>
+        <item>@string/belgium</item>
+        <item>@string/bosnia_and_herzegovina</item>
+        <item>@string/bulgaria</item>
+        <item>@string/croatia</item>
+        <item>@string/cyprus</item>
+        <item>@string/czech_republic</item>
+        <item>@string/denmark</item>
+        <item>@string/estonia</item>
+        <item>@string/finland</item>
+        <item>@string/france</item>
+        <item>@string/germany</item>
+        <item>@string/greece</item>
+        <item>@string/hungary</item>
+        <item>@string/iceland</item>
+        <item>@string/ireland</item>
+        <item>@string/italy</item>
+        <item>@string/kosovo</item>
+        <item>@string/latvia</item>
+        <item>@string/liechtenstein</item>
+        <item>@string/lithuania</item>
+        <item>@string/luxembourg</item>
+        <item>@string/malta</item>
+        <item>@string/moldova</item>
+        <item>@string/monaco</item>
+        <item>@string/montenegro</item>
+        <item>@string/netherlands</item>
+        <item>@string/north_macedonia</item>
+        <item>@string/norway</item>
+        <item>@string/poland</item>
+        <item>@string/portugal</item>
+        <item>@string/romania</item>
+        <item>@string/russia</item>
+        <item>@string/san_marino</item>
+        <item>@string/serbia</item>
+        <item>@string/slovakia</item>
+        <item>@string/slovenia</item>
+        <item>@string/spain</item>
+        <item>@string/sweden</item>
+        <item>@string/switzerland</item>
+        <item>@string/ukraine</item>
+        <item>@string/united_kingdom</item>
+        <item>@string/vatican_city</item>
+    </string-array>
+</resources>

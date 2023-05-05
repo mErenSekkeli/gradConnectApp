@@ -114,7 +114,7 @@
                     android:text="@string/empty_string"
                     android:textSize="15dp"
                     android:inputType="date"
-                    android:hint="@string/school_entry_date"
+                    android:hint="@string/date_format_entry"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     />
@@ -131,7 +131,7 @@
                     android:text="@string/empty_string"
                     android:textSize="15dp"
                     android:inputType="date"
-                    android:hint="@string/school_graduation_date"
+                    android:hint="@string/date_format_graduate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     />
@@ -148,6 +148,31 @@
                     android:text="@string/empty_string"
                     android:textSize="15dp"
                     android:hint="@string/department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/countrySpinner"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:entries="@array/country_names"
+                android:spinnerMode="dropdown"
+                ></Spinner>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="300dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cityField"
+                    android:text="@string/empty_string"
+                    android:textSize="15dp"
+                    android:hint="@string/city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     />
@@ -272,7 +297,7 @@
             <Button
                 android:id="@+id/saveData"
                 android:layout_width="300dp"
-                android:layout_margin="10dp"
+                android:layout_margin="25dp"
                 android:onClick="saveData"
                 android:layout_height="wrap_content"
                 android:text="@string/save"

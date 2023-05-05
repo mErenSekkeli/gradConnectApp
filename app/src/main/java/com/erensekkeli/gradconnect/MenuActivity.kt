@@ -33,6 +33,11 @@ class MenuActivity : AppCompatActivity() {
                 R.id.menu -> {
                     false
                 }
+                R.id.search -> {
+                    val intent = Intent(this@MenuActivity, SearchActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
                 R.id.profile -> {
                     val intent = Intent(this@MenuActivity, ProfileActivity::class.java)
                     startActivity(intent)

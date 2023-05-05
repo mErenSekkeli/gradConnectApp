@@ -72,7 +72,6 @@ class ProfileSettingsActivity : AppCompatActivity(), PasswordChangeDialog.Passwo
                     binding.profileImage.setImageURI(selectedImage)
                     val reference = storage.reference
                     val uuid = profilePicture!!.substringAfterLast("/").split("?")[0].split("user_profile_images")[1].replaceFirst("%2F","/")
-                    Toast.makeText(this, uuid, Toast.LENGTH_SHORT).show()
                     val imageRef = reference.child("user_profile_images$uuid")
                     val newUUID = UUID.randomUUID()
                     val newImageRef = reference.child("user_profile_images/${newUUID.toString()}.jpg")
@@ -186,11 +185,6 @@ class ProfileSettingsActivity : AppCompatActivity(), PasswordChangeDialog.Passwo
         binding.progressContainer.visibility = View.INVISIBLE
     }
 
-    private fun timestampToString(timestamp: com.google.firebase.Timestamp): String {
-        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-        return dateFormat.format(timestamp.toDate())
-    }
-
     private fun getData() {
         getProcessAnimation()
         val usersCollection = firestore.collection("UserData")
@@ -200,11 +194,13 @@ class ProfileSettingsActivity : AppCompatActivity(), PasswordChangeDialog.Passwo
                 val document = documents.documents[0]
                 val name = document.get("name")?.toString() ?: "-"
                 val surname = document.get("surname")?.toString() ?: "-"
-                val entryDate = timestampToString(document.get("entryDate") as Timestamp)
-                val graduationDate = timestampToString(document.get("graduationDate") as Timestamp)
+                val entryDate = document.get("entryDate")?.toString() ?: "-"
+                val graduationDate = document.get("graduationDate")?.toString() ?: "-"
                 val department = document.get("department")?.toString() ?: "-"
                 val educationStatus = document.get("educationStatus")?.toString() ?: "-"
                 val currentBusiness = document.get("currentBusiness")?.toString() ?: "-"
+                val country = document.get("country")?.toString() ?: "-"
+                val city = document.get("city")?.toString() ?: "-"
                 val facebook = document.get("facebook")?.toString() ?: "-"
                 val linkedin = document.get("linkedin")?.toString() ?: "-"
                 profilePicture = document.get("profileImage")?.toString()
@@ -228,6 +224,8 @@ class ProfileSettingsActivity : AppCompatActivity(), PasswordChangeDialog.Passwo
                 val spinIndex = resources.getStringArray(R.array.graduate_types).indexOf(educationStatus)
                 binding.gradeSpinner.setSelection(spinIndex)
                 binding.currentBusinessField.setText(currentBusiness)
+                binding.countrySpinner.setSelection(resources.getStringArray(R.array.country_names).indexOf(country))
+                binding.cityField.setText(city)
                 binding.facebookField.setText(facebook)
                 binding.linkedinField.setText(linkedin)
 
@@ -297,12 +295,6 @@ class ProfileSettingsActivity : AppCompatActivity(), PasswordChangeDialog.Passwo
         alert.show()
     }
 
-    private fun changeStringToTimestamp(date: String?): Timestamp {
-        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-        val parsedDate = dateFormat.parse(date)
-        return Timestamp(parsedDate!!)
-    }
-
     private fun hideKeyboard() {
         val inputMethodManager = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
@@ -312,11 +304,13 @@ class ProfileSettingsActivity : AppCompatActivity(), PasswordChangeDialog.Passwo
         hideKeyboard()
         val name = binding.nameField.text.toString()
         val surname = binding.surnameField.text.toString()
-        val entryDate = changeStringToTimestamp(binding.entryDateField.text.toString())
-        val graduationDate = changeStringToTimestamp(binding.graduationDateField.text.toString())
+        val entryDate = binding.entryDateField.text.toString()
+        val graduationDate = binding.graduationDateField.text.toString()
         val department = binding.departmantField.text.toString()
         val educationStatus = binding.gradeSpinner.selectedItem.toString()
         val currentBusiness = binding.currentBusinessField.text.toString()
+        val country = binding.countrySpinner.selectedItem.toString()
+        val city = binding.cityField.text.toString()
         val facebook = binding.facebookField.text.toString()
         val linkedin = binding.linkedinField.text.toString()
         val contactPhone = binding.contactPhoneField.text.toString()
@@ -340,13 +334,13 @@ class ProfileSettingsActivity : AppCompatActivity(), PasswordChangeDialog.Passwo
                         "department" to department,
                         "educationStatus" to educationStatus,
                         "currentBusiness" to currentBusiness,
+                        "country" to country,
+                        "city" to city,
                         "facebook" to facebook,
                         "linkedin" to linkedin,
                         "contactPhone" to contactPhone,
                         "contactMail" to contactMail
                     )
-                    //TODO: not update profile image and set this update
-                    //TODO: for Changing Password you must find a modal to change password
 
                     usersCollection.document(documentId).update(user).addOnSuccessListener {
                         Toast.makeText(this, R.string.user_data_saved, Toast.LENGTH_LONG).show()
