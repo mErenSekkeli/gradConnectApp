@@ -1,9 +1,9 @@
-package com.erensekkeli.gradconnect
+package com.erensekkeli.gradconnect.models
 
-import com.google.firebase.Timestamp
+import java.io.Serializable
 
 class User(name: String, surname: String, country: String?, city: String?, entryDate: String?, graduateDate: String?, contactMail: String?, contactPhone: String?, currentBusiness: String?,
-    department: String?, educationStatus: String?,  facebook: String?, linkedin: String?, profileImage: String?) {
+    department: String?, educationStatus: String?,  facebook: String?, linkedin: String?, profileImage: String?): Serializable {
 
     val name: String = name
     val surname: String = surname
@@ -19,6 +19,7 @@ class User(name: String, surname: String, country: String?, city: String?, entry
     val facebook: String? = facebook
     val linkedin: String? = linkedin
     val profileImage: String? = profileImage
+
 
 
 }

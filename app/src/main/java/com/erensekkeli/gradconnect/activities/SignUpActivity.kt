@@ -1,4 +1,4 @@
-package com.erensekkeli.gradconnect
+package com.erensekkeli.gradconnect.activities
 
 import android.content.ContentValues
 import android.content.Intent
@@ -12,13 +12,14 @@ import android.provider.MediaStore
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
-import android.widget.DatePicker
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.erensekkeli.gradconnect.guitools.BottomSheetFragment
+import com.erensekkeli.gradconnect.R
 import com.erensekkeli.gradconnect.databinding.ActivitySignUpBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
@@ -29,8 +30,6 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
-import java.sql.Timestamp
-import java.util.Calendar
 import java.util.UUID
 
 class SignUpActivity : AppCompatActivity() {

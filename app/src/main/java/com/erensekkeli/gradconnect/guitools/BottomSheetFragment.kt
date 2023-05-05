@@ -1,10 +1,11 @@
-package com.erensekkeli.gradconnect
+package com.erensekkeli.gradconnect.guitools
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import com.erensekkeli.gradconnect.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 class BottomSheetFragment: BottomSheetDialogFragment(){

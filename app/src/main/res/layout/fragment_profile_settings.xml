@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileSettingsActivity">
+    tools:context=".fragments.ProfileSettingsFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -20,7 +20,6 @@
             android:layout_height="40dp"
             android:layout_gravity="left"
             android:layout_marginTop="6dp"
-            android:onClick="goBack"
             app:srcCompat="@drawable/baseline_chevron_left_24" />
     </androidx.cardview.widget.CardView>
 
@@ -29,7 +28,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="60dp"
-        android:onClick="changeProfileImage"
         android:src="@drawable/app_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -40,11 +38,11 @@
         android:id="@+id/profileNameSurname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:textSize="24dp"
+        android:layout_marginTop="20dp"
         android:text="Name And Surname"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileImage" />
 
@@ -291,18 +289,28 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:backgroundTint="@color/red_200"
-                android:onClick="changePassword"
                 android:text="@string/change_password" />
 
             <Button
                 android:id="@+id/saveData"
                 android:layout_width="300dp"
                 android:layout_margin="25dp"
-                android:onClick="saveData"
                 android:layout_height="wrap_content"
                 android:text="@string/save"
                 android:backgroundTint="@color/turquoise"
                 />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red_200"
+                android:layout_margin="10dp"
+                android:text="@string/exit_app"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </LinearLayout>
     </ScrollView>

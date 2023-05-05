@@ -128,7 +128,23 @@ So go ahead and explore our app! We hope you find it useful and enjoyable. And c
     <string name="degree">Degree</string>
     <string name="date_format_entry">Entry Date dd/MM/yyyy</string>
     <string name="date_format_graduate">Graduation Date dd/MM/yyyy</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="mail_subject">Hello There</string>
+    <string name="mail_body">I am interested in your profile. Please contact me.</string>
+    <string name="no_mail_app">No Mail App Found</string>
+    <string name="no_phone_app">No Phone App Found</string>
+    <string name="main">Main</string>
+    <string name="announcements">Announcements</string>
+    <string name="creator">Creator: </string>
+    <string name="deadline">Deadline: </string>
+    <string name="create_announcement">Create A New Announcement</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="deadline_format">Deadline dd/MM/yyyy</string>
+    <string name="create">Create</string>
+    <string name="announcement_created">Announcement Created</string>
+    <string name="announcement_create_failed">Announcement Create Failed</string>
+    <string name="search_people_to_contact">Search People To Contact</string>
+
 
 </resources>
