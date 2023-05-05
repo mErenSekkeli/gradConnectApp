@@ -1,4 +1,4 @@
-package com.erensekkeli.gradconnect
+package com.erensekkeli.gradconnect.guitools
 
 import android.app.Dialog
 import android.content.Context
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.erensekkeli.gradconnect.R
 
 class PasswordChangeDialog(context: Context, private val listener: PasswordChangeDialogListener) : Dialog(context) {
 

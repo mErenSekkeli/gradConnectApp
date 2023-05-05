@@ -1,4 +1,4 @@
-package com.erensekkeli.gradconnect
+package com.erensekkeli.gradconnect.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import com.erensekkeli.gradconnect.R
 import com.erensekkeli.gradconnect.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

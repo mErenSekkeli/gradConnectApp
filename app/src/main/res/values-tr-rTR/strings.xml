@@ -129,6 +129,22 @@ Uygulamamız ile diğer mezunlarla iletişim kurabilir, görsel ve duyuruları p
     <string name="degree">Derece</string>
     <string name="date_format_entry">Giriş Yılı dd/MM/yyyy</string>
     <string name="date_format_graduate">Mezun Yılı dd/MM/yyyy</string>
+    <string name="mail_subject">Selamlar</string>
+    <string name="mail_body">Profilinizle ilgileniyorum. Lütfen bana ulaşın.</string>
+    <string name="no_mail_app">Mail uygulaması bulunamadı</string>
+    <string name="no_phone_app">Telefon uygulaması bulunamadı</string>
+    <string name="main">Ana Sayfa</string>
+    <string name="announcements">Duyurular</string>
+    <string name="creator">Oluşturan: </string>
+    <string name="deadline">Son Tarih: </string>
+    <string name="create_announcement">Yeni Bir Duyuru Oluştur</string>
+    <string name="title">Başlık</string>
+    <string name="content">İçerik</string>
+    <string name="deadline_format">Bitiş Tarihi dd/MM/yyyy</string>
+    <string name="create">Oluştur</string>
+    <string name="announcement_created">Duyuru Başarıyla Oluşturuldu</string>
+    <string name="announcement_create_failed">Duyuru Oluşturulamadı</string>
+    <string name="search_people_to_contact">İletişim Kurmak İçin Arayın</string>
 
 
 

@@ -1,44 +1,46 @@
-package com.erensekkeli.gradconnect
+package com.erensekkeli.gradconnect.fragments
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.erensekkeli.gradconnect.databinding.ActivitySearchResultBinding
+import com.erensekkeli.gradconnect.R
+import com.erensekkeli.gradconnect.adapters.SearchResultAdapter
+import com.erensekkeli.gradconnect.databinding.FragmentSearchResultBinding
+import com.erensekkeli.gradconnect.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Locale
 
-class SearchResultActivity : AppCompatActivity() {
+class SearchResultFragment : Fragment() {
 
-    private lateinit var binding: ActivitySearchResultBinding
+    private lateinit var binding: FragmentSearchResultBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
     private lateinit var recyclerView: RecyclerView
     private var userList: ArrayList<User> = ArrayList()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivitySearchResultBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        binding = FragmentSearchResultBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         auth = Firebase.auth
         firestore = Firebase.firestore
-
         recyclerView = binding.searchResultItemList
-        binding.searchResultItemList.layoutManager = LinearLayoutManager(this)
+        binding.searchResultItemList.layoutManager = LinearLayoutManager(context)
         binding.searchResultItemList.adapter = SearchResultAdapter(userList)
 
-        val intent = intent
-        var nameSurname: String? = intent.getStringExtra("nameSurname")
+        val nameSurname: String? = arguments?.getString("nameSurname")
         var name: String? = null
         var surname: String? = null
 
@@ -50,19 +52,20 @@ class SearchResultActivity : AppCompatActivity() {
             surname = nameSurname.substring(lastSpaceIndex + 1)
         }
 
-        var country: String? = intent.getStringExtra("country")
-        var city: String? = intent.getStringExtra("city")
+        var country: String? = arguments?.getString("country")
+        var city: String? = arguments?.getString("city")
 
-        val graduateDate: String? = intent.getStringExtra("graduateDate")
+        val graduateDate: String? = arguments?.getString("graduateDate")
 
         if(nameSurname == null && country == null && city == null && graduateDate == null) {
-            Toast.makeText(this, R.string.something_went_wrong, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, R.string.something_went_wrong, Toast.LENGTH_SHORT).show()
             removeProcessAnimation()
-            finish()
+            getBack()
             return
         }
 
         var collection: Query = firestore.collection("UserData")
+
 
         if(name != null && surname != null) {
             collection = collection.whereEqualTo("name", name)
@@ -84,9 +87,9 @@ class SearchResultActivity : AppCompatActivity() {
 
         collection.get().addOnSuccessListener { documents ->
             if(documents.isEmpty) {
-                Toast.makeText(this, R.string.no_result, Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, R.string.no_result, Toast.LENGTH_SHORT).show()
                 removeProcessAnimation()
-                finish()
+                getBack()
                 return@addOnSuccessListener
             }
             for(document in documents) {
@@ -111,16 +114,26 @@ class SearchResultActivity : AppCompatActivity() {
             binding.searchResultItemList.adapter?.notifyDataSetChanged()
             removeProcessAnimation()
         }.addOnFailureListener { exception ->
-            Toast.makeText(this, R.string.something_went_wrong, Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, R.string.something_went_wrong, Toast.LENGTH_SHORT).show()
             removeProcessAnimation()
-            finish()
+            getBack()
         }
 
-        auth = Firebase.auth
-        firestore = Firebase.firestore
+        binding.backBtn.setOnClickListener {
+            getBack()
+        }
 
-        binding.backBtn.setOnClickListener { finish() }
+    }
 
+    override fun onResume() {
+        super.onResume()
+        //delete previous items
+        userList.clear()
+    }
+
+    private fun getBack() {
+        val fragmentManager = activity?.supportFragmentManager
+        fragmentManager?.popBackStack()
     }
 
     private fun getProcessAnimation() {
@@ -130,6 +143,4 @@ class SearchResultActivity : AppCompatActivity() {
     private fun removeProcessAnimation() {
         binding.progressContainer.visibility = View.INVISIBLE
     }
-
-
 }

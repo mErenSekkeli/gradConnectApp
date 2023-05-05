@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".fragments.ProfileFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profileImage"
@@ -91,6 +91,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/createAnnouncementBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="6dp"
+            android:layout_margin="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_notification_add_24" />
+
+        <ImageView
             android:id="@+id/profileSettingsBtn"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -102,14 +113,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_settings_24" />
 
-        <ImageView
-            android:id="@+id/backBtn"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:layout_marginTop="6dp"
-            android:onClick="goBack"
-            app:srcCompat="@drawable/baseline_chevron_left_24" />
     </androidx.cardview.widget.CardView>
 
     <TextView

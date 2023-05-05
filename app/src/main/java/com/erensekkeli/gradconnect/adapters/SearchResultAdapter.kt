@@ -1,13 +1,17 @@
-package com.erensekkeli.gradconnect
+package com.erensekkeli.gradconnect.adapters
 
 import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.erensekkeli.gradconnect.fragments.ProfileDetailFragment
+import com.erensekkeli.gradconnect.R
+import com.erensekkeli.gradconnect.activities.FeedActivity
 import com.erensekkeli.gradconnect.databinding.SearchResultItemBinding
+import com.erensekkeli.gradconnect.models.User
 
 class SearchResultAdapter(val userList: ArrayList<User>): RecyclerView.Adapter<SearchResultAdapter.UserHolder>() {
 
@@ -35,10 +39,21 @@ class SearchResultAdapter(val userList: ArrayList<User>): RecyclerView.Adapter<S
         holder.binding.graduationDateResult.text = userList[position].graduateDate ?: "-"
         holder.binding.departmentResult.text = userList[position].department ?: "-"
         holder.binding.educationStatusResult.text = userList[position].educationStatus ?: "-"
-
         holder.itemView.setOnClickListener {
-            Toast.makeText(holder.itemView.context, userList[position].name + " " + userList[position].surname, Toast.LENGTH_SHORT).show()
-            //TODO: go to profile
+            val bundle = Bundle()
+            bundle.putSerializable("user", userList[position])
+            val fragment = ProfileDetailFragment()
+            fragment.arguments = bundle
+            val transaction = (holder.itemView.context as FeedActivity).supportFragmentManager.beginTransaction()
+            transaction.setCustomAnimations(
+                R.anim.enter_right_to_left,
+                R.anim.exit_right_to_left,
+                R.anim.enter_left_to_right,
+                R.anim.exit_left_to_right
+            )
+            transaction.replace(R.id.feedContainerFragment, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
         }
     }
 
