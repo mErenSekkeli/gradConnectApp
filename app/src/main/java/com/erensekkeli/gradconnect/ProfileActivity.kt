@@ -1,12 +1,10 @@
 package com.erensekkeli.gradconnect
 
 import android.content.Intent
-import android.graphics.Color
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.net.toUri
 import com.bumptech.glide.Glide
@@ -18,10 +16,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ktx.storage
-import java.sql.Timestamp
 import java.text.SimpleDateFormat
-import java.util.Calendar
-import java.util.Date
 import java.util.Locale
 
 class ProfileActivity : AppCompatActivity() {
@@ -48,11 +43,6 @@ class ProfileActivity : AppCompatActivity() {
         getData()
     }
 
-    private fun timestampToString(timestamp: com.google.firebase.Timestamp): String {
-        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-        return dateFormat.format(timestamp.toDate())
-    }
-
     private fun getProcessAnimation() {
         binding.progressContainer.visibility = View.VISIBLE
     }
@@ -70,8 +60,8 @@ class ProfileActivity : AppCompatActivity() {
                 val document = documents.documents[0]
                 val name = document.get("name") as String
                 val surname = document.get("surname") as String
-                val entryDate = timestampToString(document.get("entryDate") as com.google.firebase.Timestamp)
-                val graduationDate = timestampToString(document.get("graduationDate") as com.google.firebase.Timestamp)
+                val entryDate = document.get("entryDate")?.toString() ?: "-"
+                val graduationDate = document.get("graduationDate")?.toString() ?: "-"
                 val profilePicture = document.get("profileImage")?.toString() ?: ""
                 val contactPhone = document.get("contactPhone")?.toString() ?: "-"
                 val contactMail = document.get("contactMail")?.toString() ?: "-"

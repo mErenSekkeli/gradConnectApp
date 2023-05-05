@@ -68,5 +68,67 @@ So go ahead and explore our app! We hope you find it useful and enjoyable. And c
     <string name="password_changed">Password Changed Successfully</string>
     <string name="password_change_failed">Password Not Changed. Please Sign In Again.</string>
     <string name="password_change_canceled">Password Change Canceled</string>
+    <string name="search">Search</string>
+    <string name="name_or_surname">Name or Surname</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+
+    <!-- Country Names -->
+    <string name="turkey">Turkey</string>
+    <string name="united_states">United States</string>
+    <string name="albania">Albania</string>
+    <string name="andorra">Andorra</string>
+    <string name="austria">Austria</string>
+    <string name="belarus">Belarus</string>
+    <string name="belgium">Belgium</string>
+    <string name="bosnia_and_herzegovina">Bosnia and Herzegovina</string>
+    <string name="bulgaria">Bulgaria</string>
+    <string name="croatia">Croatia</string>
+    <string name="cyprus">Cyprus</string>
+    <string name="czech_republic">Czech Republic</string>
+    <string name="denmark">Denmark</string>
+    <string name="estonia">Estonia</string>
+    <string name="finland">Finland</string>
+    <string name="france">France</string>
+    <string name="germany">Germany</string>
+    <string name="greece">Greece</string>
+    <string name="hungary">Hungary</string>
+    <string name="iceland">Iceland</string>
+    <string name="ireland">Ireland</string>
+    <string name="italy">Italy</string>
+    <string name="kosovo">Kosovo</string>
+    <string name="latvia">Latvia</string>
+    <string name="liechtenstein">Liechtenstein</string>
+    <string name="lithuania">Lithuania</string>
+    <string name="luxembourg">Luxembourg</string>
+    <string name="malta">Malta</string>
+    <string name="moldova">Moldova</string>
+    <string name="monaco">Monaco</string>
+    <string name="montenegro">Montenegro</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="north_macedonia">North Macedonia</string>
+    <string name="norway">Norway</string>
+    <string name="poland">Poland</string>
+    <string name="portugal">Portugal</string>
+    <string name="romania">Romania</string>
+    <string name="russia">Russia</string>
+    <string name="san_marino">San Marino</string>
+    <string name="serbia">Serbia</string>
+    <string name="slovakia">Slovakia</string>
+    <string name="slovenia">Slovenia</string>
+    <string name="spain">Spain</string>
+    <string name="sweden">Sweden</string>
+    <string name="switzerland">Switzerland</string>
+    <string name="ukraine">Ukraine</string>
+    <string name="united_kingdom">United Kingdom</string>
+    <string name="vatican_city">Vatican City</string>
+
+    <string name="search_for_contact">Search for contact</string>
+    <string name="no_result">No Result</string>
+    <string name="degree">Degree</string>
+    <string name="date_format_entry">Entry Date dd/MM/yyyy</string>
+    <string name="date_format_graduate">Graduation Date dd/MM/yyyy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

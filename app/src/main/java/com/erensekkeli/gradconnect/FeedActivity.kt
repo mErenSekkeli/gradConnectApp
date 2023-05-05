@@ -36,6 +36,11 @@ class FeedActivity : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
+                R.id.search -> {
+                    val intent = Intent(this@FeedActivity, SearchActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
                 R.id.profile -> {
                     val intent = Intent(this@FeedActivity, ProfileActivity::class.java)
                     startActivity(intent)
