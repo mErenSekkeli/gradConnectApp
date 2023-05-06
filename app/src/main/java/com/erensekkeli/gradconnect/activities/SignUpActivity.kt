@@ -92,6 +92,11 @@ class SignUpActivity : AppCompatActivity() {
                         val intentToGallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
                         activityResultLauncher.launch(intentToGallery)
                     }
+
+                    android.Manifest.permission.READ_MEDIA_IMAGES -> {
+                        val intentToGallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+                        activityResultLauncher.launch(intentToGallery)
+                    }
                 }
             } else {
                 Toast.makeText(this, R.string.permission_denied, Toast.LENGTH_LONG).show()
