@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.GradConnect" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/turquoise</item>
+        <item name="colorSecondary">@color/light_purple</item>
+    </style>
+    <style name="Theme.GradConnect" parent="Base.Theme.GradConnect"/>
+</resources>

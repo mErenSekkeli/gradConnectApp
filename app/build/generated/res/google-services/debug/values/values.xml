@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">186912265551-3vvdra20iask9ojp8grshr3bc88o0bn5.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">186912265551</string>
+    <string name="google_api_key" translatable="false">AIzaSyCkg2DjA5yKdbgVLaBZQDwlw0I_eoWa89w</string>
+    <string name="google_app_id" translatable="false">1:186912265551:android:0b7e62995495d9c156613a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCkg2DjA5yKdbgVLaBZQDwlw0I_eoWa89w</string>
+    <string name="google_storage_bucket" translatable="false">gradconnectdb.appspot.com</string>
+    <string name="project_id" translatable="false">gradconnectdb</string>
+</resources>

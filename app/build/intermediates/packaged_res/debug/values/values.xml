@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_names">
+        <item>@string/turkey</item>
+        <item>@string/united_states</item>
+        <item>@string/albania</item>
+        <item>@string/andorra</item>
+        <item>@string/austria</item>
+        <item>@string/belarus</item>
+        <item>@string/belgium</item>
+        <item>@string/bosnia_and_herzegovina</item>
+        <item>@string/bulgaria</item>
+        <item>@string/croatia</item>
+        <item>@string/cyprus</item>
+        <item>@string/czech_republic</item>
+        <item>@string/denmark</item>
+        <item>@string/estonia</item>
+        <item>@string/finland</item>
+        <item>@string/france</item>
+        <item>@string/germany</item>
+        <item>@string/greece</item>
+        <item>@string/hungary</item>
+        <item>@string/iceland</item>
+        <item>@string/ireland</item>
+        <item>@string/italy</item>
+        <item>@string/kosovo</item>
+        <item>@string/latvia</item>
+        <item>@string/liechtenstein</item>
+        <item>@string/lithuania</item>
+        <item>@string/luxembourg</item>
+        <item>@string/malta</item>
+        <item>@string/moldova</item>
+        <item>@string/monaco</item>
+        <item>@string/montenegro</item>
+        <item>@string/netherlands</item>
+        <item>@string/north_macedonia</item>
+        <item>@string/norway</item>
+        <item>@string/poland</item>
+        <item>@string/portugal</item>
+        <item>@string/romania</item>
+        <item>@string/russia</item>
+        <item>@string/san_marino</item>
+        <item>@string/serbia</item>
+        <item>@string/slovakia</item>
+        <item>@string/slovenia</item>
+        <item>@string/spain</item>
+        <item>@string/sweden</item>
+        <item>@string/switzerland</item>
+        <item>@string/ukraine</item>
+        <item>@string/united_kingdom</item>
+        <item>@string/vatican_city</item>
+    </string-array>
+    <array name="graduate_types">
+        <item value="0">Undergraduate</item>
+        <item value="1">Graduate</item>
+        <item value="2">PhD</item>
+    </array>
+    <color name="black">#FF000000</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="ic_launcher_background">#06B8B8</color>
+    <color name="light_blue">#5F9AFF</color>
+    <color name="light_purple">#CCB8FA</color>
+    <color name="light_turquoise">#BBF3F3</color>
+    <color name="purple">#9F85FF</color>
+    <color name="red_200">#DC5252</color>
+    <color name="turquoise">#06B8B8</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="albania">Albania</string>
+    <string name="andorra">Andorra</string>
+    <string name="announcement_create_failed">Announcement Create Failed</string>
+    <string name="announcement_created">Announcement Created</string>
+    <string name="announcements">Announcements</string>
+    <string name="app_name">GradConnect</string>
+    <string name="austria">Austria</string>
+    <string name="belarus">Belarus</string>
+    <string name="belgium">Belgium</string>
+    <string name="bosnia_and_herzegovina">Bosnia and Herzegovina</string>
+    <string name="bulgaria">Bulgaria</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_password">Change Password</string>
+    <string name="choose_image_from">You can choose gallery or camera to pick an image</string>
+    <string name="choose_image_from_gallery">Choose Image</string>
+    <string name="choose_image_or_video">Choose image or video</string>
+    <string name="city">City</string>
+    <string name="close">Close</string>
+    <string name="contact_mail">Contact Mail</string>
+    <string name="contact_phone">Contact Phone</string>
+    <string name="contact_settings">Contact Settings</string>
+    <string name="content">Content</string>
+    <string name="country">Country</string>
+    <string name="create">Create</string>
+    <string name="create_announcement">Create A New Announcement</string>
+    <string name="create_media">Create A New Media</string>
+    <string name="creator">Creator: </string>
+    <string name="croatia">Croatia</string>
+    <string name="current_business">Current Business</string>
+    <string name="cyprus">Cyprus</string>
+    <string name="czech_republic">Czech Republic</string>
+    <string name="date_format_entry">Entry Date dd/MM/yyyy</string>
+    <string name="date_format_graduate">Graduation Date dd/MM/yyyy</string>
+    <string name="deadline">Deadline: </string>
+    <string name="deadline_format">Deadline dd/MM/yyyy</string>
+    <string name="default_web_client_id" translatable="false">186912265551-3vvdra20iask9ojp8grshr3bc88o0bn5.apps.googleusercontent.com</string>
+    <string name="degree">Degree</string>
+    <string name="delete_media">Delete Media</string>
+    <string name="delete_media_message">Are you sure you want to delete this media?</string>
+    <string name="denmark">Denmark</string>
+    <string name="department">Department</string>
+    <string name="description">Description</string>
+    <string name="email">Email*</string>
+    <string name="email_empty">Make sure you enter your email</string>
+    <string name="email_format_error">E-Mail format is wrong</string>
+    <string name="email_or_password_empty">Make sure you enter your email and password</string>
+    <string name="empty_string">-</string>
+    <string name="estonia">Estonia</string>
+    <string name="exit_app">Log Out</string>
+    <string name="exit_app_message">Are you sure you want to log out?</string>
+    <string name="facebook">Facebook</string>
+    <string name="failed_to_get_image">Failed to get image</string>
+    <string name="fill_requried_fields">Please fill all required fields</string>
+    <string name="finland">Finland</string>
+    <string name="france">France</string>
+    <string name="gallery">Gallery</string>
+    <string name="gcm_defaultSenderId" translatable="false">186912265551</string>
+    <string name="general_settings">General Settings</string>
+    <string name="germany">Germany</string>
+    <string name="give_external_permission">Please Give Read External Storage Permission</string>
+    <string name="give_permission">Give Permission</string>
+    <string name="google_api_key" translatable="false">AIzaSyCkg2DjA5yKdbgVLaBZQDwlw0I_eoWa89w</string>
+    <string name="google_app_id" translatable="false">1:186912265551:android:0b7e62995495d9c156613a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCkg2DjA5yKdbgVLaBZQDwlw0I_eoWa89w</string>
+    <string name="google_storage_bucket" translatable="false">gradconnectdb.appspot.com</string>
+    <string name="got_it">Got it</string>
+    <string name="grad_connect">GradConnect</string>
+    <string name="greece">Greece</string>
+    <string name="havent_account">Don\'t have an account?</string>
+    <string name="home">Home</string>
+    <string name="hungary">Hungary</string>
+    <string name="iceland">Iceland</string>
+    <string name="image">Image</string>
+    <string name="image_or_video">Image or Video</string>
+    <string name="ireland">Ireland</string>
+    <string name="italy">Italy</string>
+    <string name="kosovo">Kosovo</string>
+    <string name="latvia">Latvia</string>
+    <string name="liechtenstein">Liechtenstein</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="lithuania">Lithuania</string>
+    <string name="login_failed">E-Mail or Password Incorrect</string>
+    <string name="login_success">Login Successful</string>
+    <string name="luxembourg">Luxembourg</string>
+    <string name="mail_body">I am interested in your profile. Please contact me.</string>
+    <string name="mail_subject">Hello There</string>
+    <string name="main">Main</string>
+    <string name="malta">Malta</string>
+    <string name="media_create_failed">Media Create Failed</string>
+    <string name="media_created">Media Created</string>
+    <string name="media_delete_failed">Media Delete Failed</string>
+    <string name="media_deleted">Media Deleted Successfully</string>
+    <string name="menu">Menu</string>
+    <string name="moldova">Moldova</string>
+    <string name="monaco">Monaco</string>
+    <string name="montenegro">Montenegro</string>
+    <string name="name">Name*</string>
+    <string name="name_or_surname">Name or Surname</string>
+    <string name="name_or_surname_empty">Make sure you enter your name and surname</string>
+    <string name="netherlands">Netherlands</string>
+    <string name="no">No</string>
+    <string name="no_mail_app">No Mail App Found</string>
+    <string name="no_phone_app">No Phone App Found</string>
+    <string name="no_result">No Result</string>
+    <string name="north_macedonia">North Macedonia</string>
+    <string name="norway">Norway</string>
+    <string name="password">Password*</string>
+    <string name="password_again">Password Again*</string>
+    <string name="password_change_canceled">Password Change Canceled</string>
+    <string name="password_change_failed">Password Not Changed. Please Sign In Again.</string>
+    <string name="password_changed">Password Changed Successfully</string>
+    <string name="password_empty">Make sure you enter your password</string>
+    <string name="password_format_error">Your password must contain at least 8 digits and uppercase and lowercase characters.</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="poland">Poland</string>
+    <string name="portugal">Portugal</string>
+    <string name="profile">Profile</string>
+    <string name="profile_image_update_failed">Profile Image Update Failed</string>
+    <string name="profile_image_updated">Profile Image Updated</string>
+    <string name="project_id" translatable="false">gradconnectdb</string>
+    <string name="registration_successful">Registration Successful</string>
+    <string name="remind_me">Remind Me</string>
+    <string name="romania">Romania</string>
+    <string name="russia">Russia</string>
+    <string name="san_marino">San Marino</string>
+    <string name="save">Save</string>
+    <string name="school_entry_date">School Entry Date</string>
+    <string name="school_graduation_date">School Graduation Date</string>
+    <string name="search">Search</string>
+    <string name="search_for_contact">Search for contact</string>
+    <string name="search_people_to_contact">Search People To Contact</string>
+    <string name="select_profile">Select Profile Image</string>
+    <string name="serbia">Serbia</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="slovakia">Slovakia</string>
+    <string name="slovenia">Slovenia</string>
+    <string name="social_settings">Social Media Settings</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="spain">Spain</string>
+    <string name="surname">Surname*</string>
+    <string name="sweden">Sweden</string>
+    <string name="switzerland">Switzerland</string>
+    <string name="tell_us_about_yourself">Tell us about yourself</string>
+    <string name="title">Title</string>
+    <string name="turkey">Turkey</string>
+    <string name="ukraine">Ukraine</string>
+    <string name="united_kingdom">United Kingdom</string>
+    <string name="united_states">United States</string>
+    <string name="user_data_save_failed">Save Failed</string>
+    <string name="user_data_saved">Saved Successfully</string>
+    <string name="vatican_city">Vatican City</string>
+    <string name="video">Video</string>
+    <string name="what_is_this_app">What is this app?</string>
+    <string name="what_is_this_app_desc">We\'re so glad you\'ve decided to join our community of graduates. Our app is designed to help you stay connected with other graduates and share your experiences as you embark on this exciting new journey.
+
+With our app, you can communicate with other graduates, share images and announcements, and stay up-to-date with all the latest news and events related to your graduation. Whether you\'re looking to reconnect with old friends or make new connections, our app has everything you need to stay connected and informed.
+
+So go ahead and explore our app! We hope you find it useful and enjoyable. And congratulations on your graduation!</string>
+    <string name="yes">Yes</string>
+    <style name="Base.Theme.GradConnect" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/turquoise</item>
+        <item name="colorSecondary">@color/light_purple</item>
+
+    </style>
+    <style name="Theme.GradConnect" parent="Base.Theme.GradConnect"/>
+</resources>

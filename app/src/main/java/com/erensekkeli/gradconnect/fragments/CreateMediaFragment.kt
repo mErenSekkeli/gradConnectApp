@@ -108,6 +108,12 @@ class CreateMediaFragment : Fragment() {
                         intentToGallery.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/* video/*")
                         activityResultLauncher.launch(intentToGallery)
                     }
+
+                    android.Manifest.permission.READ_MEDIA_IMAGES -> {
+                        val intentToGallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+                        intentToGallery.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/* video/*")
+                        activityResultLauncher.launch(intentToGallery)
+                    }
                 }
             } else {
                 Toast.makeText(context, R.string.permission_denied, Toast.LENGTH_LONG).show()
