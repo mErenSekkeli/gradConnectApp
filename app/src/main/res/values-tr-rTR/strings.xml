@@ -145,6 +145,19 @@ Uygulamamız ile diğer mezunlarla iletişim kurabilir, görsel ve duyuruları p
     <string name="announcement_created">Duyuru Başarıyla Oluşturuldu</string>
     <string name="announcement_create_failed">Duyuru Oluşturulamadı</string>
     <string name="search_people_to_contact">İletişim Kurmak İçin Arayın</string>
+    <string name="create_media">Yeni Bir Medya Oluştur</string>
+    <string name="description">Açıklama</string>
+    <string name="image_or_video">Resim veya Video</string>
+    <string name="choose_image_or_video">Resim veya Video Seçin</string>
+    <string name="image">Resim</string>
+    <string name="video">Video</string>
+    <string name="media_created">Medya Başarıyla Oluşturuldu</string>
+    <string name="media_create_failed">Medya Oluşturulamadı</string>
+    <string name="media_deleted">Medya Başarıyla Silindi</string>
+    <string name="media_delete_failed">Medya Silinemedi</string>
+    <string name="delete_media">Medyayı Sil</string>
+    <string name="delete_media_message">Bu medyayı silmek istediğinizden emin misiniz?</string>
+    <string name="grad_connect">GradConnect</string>
 
 
 

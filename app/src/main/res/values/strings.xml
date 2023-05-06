@@ -145,6 +145,19 @@ So go ahead and explore our app! We hope you find it useful and enjoyable. And c
     <string name="announcement_created">Announcement Created</string>
     <string name="announcement_create_failed">Announcement Create Failed</string>
     <string name="search_people_to_contact">Search People To Contact</string>
+    <string name="create_media">Create A New Media</string>
+    <string name="description">Description</string>
+    <string name="image_or_video">Image or Video</string>
+    <string name="choose_image_or_video">Choose image or video</string>
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="media_created">Media Created</string>
+    <string name="media_create_failed">Media Create Failed</string>
+    <string name="media_deleted">Media Deleted Successfully</string>
+    <string name="media_delete_failed">Media Delete Failed</string>
+    <string name="delete_media">Delete Media</string>
+    <string name="delete_media_message">Are you sure you want to delete this media?</string>
+    <string name="grad_connect">GradConnect</string>
 
 
 </resources>
