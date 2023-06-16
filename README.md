@@ -11,7 +11,7 @@ GradConnect is an Android application that allows who graduated from the same un
 ## Features
 - Users can create an account:
 
-![Alt text](screenshots/signup.png?raw=true "Title")
+![Alt text](screenshots/signup.png?raw=true "Title" | with=100)
 
 - Users can login to the app:
 
