@@ -15,29 +15,29 @@ GradConnect is an Android application that allows who graduated from the same un
 
 - Users can login to the app:
 
-![Alt text](screenshots/signin.png?raw=true "Title")
+<img src="screenshots/signin.png" width="200">
 
 - Users can see media posted by other users:
 
-![Alt text](screenshots/media.png?raw=true "Title")
+<img src="screenshots/media.png" width="200">
+<img src="screenshots/media2.png" width="200">
 
-![Alt text](screenshots/media2.png?raw=true "Title")
 
 - Users can see announcements posted by other users:
 
-![Alt text](screenshots/announcements.png?raw=true "Title")
+<img src="screenshots/announcements.png" width="200">
 
 - Users can search for other user profiles:
 
-![Alt text](screenshots/search.png?raw=true "Title")
+<img src="screenshots/search.png" width="200">
 
-![Alt text](screenshots/search2.png?raw=true "Title")
+<img src="screenshots/search2.png" width="200">
 
-![Alt text](screenshots/profile2.png?raw=true "Title")
+<img src="screenshots/profile2.png" width="200">
 
 - Users can see their own profile:
 
-![Alt text](screenshots/profile.png?raw=true "Title")
+<img src="screenshots/profile.png" width="200">
 
 
 ## Installation
