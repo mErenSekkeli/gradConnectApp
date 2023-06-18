@@ -38,7 +38,7 @@ GradConnect is an Android application that allows who graduated from the same un
 
 - Users can see their own profile:
 
-<img src="screenshots/profile.png" width="200">
+<img src="screenshots/profile.jpg" width="200">
 
 
 ## Installation
